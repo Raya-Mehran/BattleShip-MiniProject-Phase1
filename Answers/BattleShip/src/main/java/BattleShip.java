@@ -109,6 +109,7 @@ public class BattleShip {
             }
         }
     }
+
     /**
      * Checks if a ship can be placed at the specified location on the grid.
      * This includes checking the size of the ship, its direction (horizontal or vertical),
@@ -186,7 +187,6 @@ public class BattleShip {
     }
 
 
-
     /**
      * Checks if the game is over by verifying if all ships are sunk.
      *
@@ -204,7 +204,7 @@ public class BattleShip {
      * @return true if all ships are sunk, false otherwise.
      */
     static boolean allShipsSunk(char[][] grid) {
-        for (int row= 0; row< GRID_SIZE; row++) {
+        for (int row = 0; row < GRID_SIZE; row++) {
             for (int col = 0; col < GRID_SIZE; col++) {
                 if (grid[row][col] == 'S') {
                     return false;
@@ -239,7 +239,6 @@ public class BattleShip {
         int row = Integer.parseInt(rowDigit);
         return row >= 1 && row <= 10;
     }
-
 
 
     /**
